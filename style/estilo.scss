@@ -1,0 +1,569 @@
+@import "_reset";
+@import "_variables";
+
+
+/*------ General Setup----- */
+.container-fluid{
+	width:98%;
+	max-width:1200px;
+	
+}
+
+
+body{
+	
+	font-family: $base-font, sans-serif;
+	padding:0;
+}
+
+
+
+.container{
+	padding-right:auto;
+	padding-right:auto;
+}
+.navbar-default{
+	background:white;
+	border-style:none;				
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+
+
+	@media screen and (max-width:770px){
+    float: left;
+	}
+
+	.navbar-default{
+	background:white;
+	border-style:none;
+
+	}
+}
+
+/* --------||Header||----------*/
+
+
+.header-img {
+    background-image: url("../images/header_ok.jpg");
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+    background-position: 50% 50%;
+}
+
+.titulo-header {
+    width: 25%;
+    margin-left: 24%;
+    padding-bottom: 15%;
+    padding-top: 7%;
+    color:white;
+    h2{
+    	font-family: $base-font;
+    	color:white;
+    	font-weight: 500;
+    	font-size: 32px;
+    	padding:0 0 3% 0;
+    }
+    h5{
+    	color: rgba(255, 255, 255, 0.5);
+    }
+
+}
+
+.full-screen{
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:1px;
+	padding-right:1px;	
+}
+
+/*--------||End-Header||-----------*/
+
+/* --------||Search-bar||----------*/
+.search {
+    	margin: -40px auto 0 auto;
+        padding: 0 20px;
+
+
+.ion-android-search{
+	font-size:20px;
+	color:white;
+	margin:0 auto;
+}
+   
+ div .col-xs-12{
+ 	 padding: 0 20px;
+
+ }  
+
+}
+input.form-control.input-lg {
+    position: absolute;
+    left:0px;
+    bottom: -80px;
+    border-radius: 0px;
+    height: 80px;
+
+/* Input height modification for responsive displays */
+    	 @media screen and (max-width:500px){
+        	    bottom: -66px;   
+    			height: 50px;
+    			
+        }
+}
+
+.btn-group-lg > .btn, .btn-lg {
+    
+    min-width: 40px;
+    bottom: -80px;
+    height: 80px;
+    right:0px;
+    position: absolute;
+    padding: 15px;
+    border-radius: 0; 
+
+/* Button height modification for responsive displays */
+    	 @media screen and (max-width:500px){
+        	    bottom: -66px;   
+    			height: 50px;
+    			
+        }
+}
+
+/* --------||End-Search-bar||----------*/
+
+/* --------||Four-ft||----------*/
+
+
+.four-feat {
+    text-align: center;
+    margin-top: 124px;
+    position:relative;
+    font-family: $base-font, sans-serif;
+   
+    .features::after{    		
+    
+    		background: url("../images/icons/puntitos.png") no-repeat scroll 0 0;
+		    content: "";
+		    bottom: auto;
+    		height: 4px;
+    		left: auto;
+    		position: absolute;
+    		right: -20px;
+    		top: 52px;
+    		width: 33px;
+    				
+    					}
+
+/*--||Hiding-3-dots-sep-for-sm-displays||--*/
+
+    div:last-child::after{
+    			@media screen and (max-width:990px){
+    	    		
+    						width: 0;
+							height: 0;
+    		}
+    				}					
+
+	div:nth-last-child(3n)::after{
+ 			@media screen and (max-width:990px){
+    			width: 0;
+    			height: 0;
+    											}
+									 }
+    				
+
+}
+		
+/*--||hiding-3-Finish||---*/    
+    			
+  	
+    .features{
+
+   			h3{
+    		padding:20px 0 7px 0;
+    		font-weight: 500;
+    		padding-bottom:10px;  		
+    		
+    			}
+
+    	h5{
+    		@media screen and (max-width:770px){
+    			margin-bottom: 8%;
+    		}
+    	}
+
+    		
+							
+		 div{
+    	position:relative;
+    	margin: 15px auto;
+
+    }   
+}
+
+
+/* --------||End-Four-ft||----------*/
+
+//* --------||Center-TL-||-------*/
+
+
+.center-tlt{			
+		font-family: $base-font;
+		font-weight: 700;
+		font-size: 35px;
+}
+
+.center-title{
+	padding:4% 0 4% 0;
+
+	img{
+		padding:2% 0;
+	}
+
+	h2{
+		padding:3% 0 2% 0;
+	}
+
+	h4{
+
+	}
+}
+
+
+
+/* --------||End-Center-TL-||-------*/
+
+/* --------||Phone-&-Bullets--||-----*/
+
+.tel-grande{
+	    margin: auto;
+	    min-width: 200px;
+}
+.six-features-left{
+
+	list-style:none;
+
+	@media screen and (max-width:770px){
+
+		margin:7% 0;
+    			
+    		}
+
+		li{
+			position: relative;
+	    	padding-top: 0px;
+	    	padding-right: 60px;
+	    	margin-top: 47px;
+	    	width: 100%;
+	    	text-align: right;
+
+	    	
+				@media screen and (max-width:770px){
+
+					padding:0 0 0 60px;
+					text-align: left;
+	    			
+	    		}
+
+
+
+	    	h3{
+	    		padding: 15px 0 20px 0;
+	    		font-weight: 500;
+	    		display: inline-block;
+
+
+	    	}
+
+	    	h5{
+	    		font-family: $sec-base-font;
+	    		color:grey;
+	    		font-size: 15px;
+	    		line-height: 150%;
+	    	}
+
+	    	img{
+
+	    		position:absolute;
+	    		top:0px;
+	    		right: 2px;
+
+	    			@media screen and (max-width:770px){
+	    			right: 2px;
+					left:0px;
+	    								}
+	    	}
+		}
+		
+	}
+
+
+
+
+.six-features-right{
+	@extend.six-features-left;
+
+	li{
+
+    	padding-right:0px;
+    	padding-left:60px;
+    	text-align: left;
+	}
+
+	img{
+
+		right: 0px;
+		left:2px;
+
+		
+	}
+
+	
+}
+
+/* -------||End-Phone-&-Bullets||----------*/
+
+/* --------||Second center Ttl||-------*/
+
+.big-img-sep{
+    
+    background: url("../images/pricing-bg.jpg") no-repeat scroll top center;
+    background-size: 100%;
+    margin-top: -50px;
+    
+
+    
+    text-align: center;
+    z-index: -2;
+
+	   	@media screen and (max-width:990px){
+    	margin-top: 60px;
+    	margin-bottom: 60px;
+    	}
+
+
+	div.col-sm-12.full-screen{
+
+		margin-top:0;
+		padding-top:0;
+}
+
+    		img{
+
+    			padding:5% 0 0 0;
+
+    		}
+
+    			h2{
+    				padding:2% 0 2% 0;
+    		}
+
+    			h5{
+
+    				
+    				padding-bottom:15%;
+
+    		}
+}
+				
+
+
+
+/* --------||Second center-Ttl--End-||-------*/
+
+/* --------||Floating Panels||-------*/
+
+/*Se expande la columna para que quede el panel
+completando toda la pantalla en version mobile xs */
+.col-xs-6.col-md-3.full-panel{
+
+	@media screen and(max-width:487px){
+		width: 94%;
+		float: none;
+		margin:0 auto;
+	}
+}
+
+/*-------layout contanier----------*/
+.panels-cont{
+
+	width:90%;
+	margin:-150px auto;
+	overflow:auto;
+
+	@media screen and (max-width: 990px)
+{
+    margin: -20px auto;
+}
+
+/*--------||Floatin Pannels||---------*/
+.floating-panel{
+
+	margin:86px auto;
+	
+	text-align:center;
+	position:relative;
+	background:white;
+	padding: 45px 10px 50px 10px;
+         /* sombra */
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+     box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+
+ /* Center Align for cols of the last 2 tables*/
+ 	table.right-td{
+ 		text-align:left;
+
+ 	}	
+ .right{	
+	tr:nth-last-child(n+1){
+	text-align:center;
+	}
+}	
+
+
+/*-------|| Responsive Mobile ----------*/
+
+	@media screen and (max-width:990px) {
+		
+		margin: 19px auto;
+		padding:80px auto;
+	}
+	
+	@media screen and (max-width:770px) {
+		margin:30px auto;
+	}
+
+/*-------|| End Responsive Mobile ----------*/		
+		
+	h3{
+		font-family: $base-font;
+		font-size: 20px;
+		font-weight: 500;
+		padding-bottom:10px;
+
+		@media screen and (max-width:990px){
+			padding-top:25px;
+		}
+	}
+
+	h2{
+		font-family: $base-font;
+		font-size: 40px;
+		font-weight: 500;
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+
+	h6{
+		padding-bottom:15%;
+	}
+button{
+			background:#00ADF1;
+			width: 80%;
+			margin:15px auto;
+		}
+
+	span.centavos{
+			font-size: 20px;
+			font-weight: bold;
+			position:absolute;
+			
+		}
+	table{
+		width: 70%;
+		margin:15px auto;
+		text-align: left;
+
+
+		td{
+			padding:8px 0 8px 0;
+			
+			}
+
+		}
+
+	}	
+
+}
+
+/* --------||Floating Panels End||-------*/
+
+/* --------||Pre Footer||-------*/
+
+.title-pre-footer{
+	background:rgb(20, 46, 63);
+	padding:60px 0;
+	margin-top: 12%;
+	width:100%;
+	
+	h2{
+		color: white;
+
+		span{
+			color:rgb(2, 155, 216); 
+		}
+	}
+}
+
+/* --------||End Pre Footer||-------*/
+footer{
+	background:rgb(9, 23, 34);
+	padding:25px 0;
+	h5{
+		color:white;
+		display: inline-block;
+		padding-top:12px;
+	}
+	
+}
+
+
+/* responsive mobile xs */
+.footer-tlt-mob{
+					
+					float:left;
+					@media screen and (max-width:700px){
+				    width: 100%;
+    				float: none;
+   					text-align: center;
+   					margin:20px auto 15px auto;
+	}
+}
+
+
+	.footer-nav{
+		ul{		
+				margin-top: 7px;
+				float:right;
+				min-width: 200px;
+					@media screen and (max-width:700px){
+						width: 100%;
+						float:none;
+						text-align: center;
+						
+			}
+			
+		}
+/* End Responsiv mobile xs --*/
+
+		li{
+		    display: inline-block;
+    		padding-left: 20px;
+
+			a{
+				text-decoration: none;
+
+				&:hover{
+					color: white;
+
+				}
+			}
+		}
+	}
+
+
+
+
+

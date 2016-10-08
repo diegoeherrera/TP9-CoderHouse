@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,100,300,400);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Estilos generales del layout */
+/*------ General Setup----- */
+.container-fluid {
+  width: 98%;
+  max-width: 1200px; }
+
+body {
+  font-family: "Roboto", sans-serif, sans-serif;
+  padding: 0; }
+
+.container {
+  padding-right: auto;
+  padding-right: auto; }
+
+.navbar-default {
+  background: white;
+  border-style: none; }
+
+@media screen and (max-width: 770px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    float: left; } }
+.navbar-default .navbar-collapse .navbar-default, .navbar-default .navbar-form .navbar-default {
+  background: white;
+  border-style: none; }
+
+/* --------||Header||----------*/
+.header-img {
+  background-image: url("../images/header_ok.jpg");
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+  background-position: 50% 50%; }
+
+.titulo-header {
+  width: 25%;
+  margin-left: 24%;
+  padding-bottom: 15%;
+  padding-top: 7%;
+  color: white; }
+  .titulo-header h2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 0 0 3% 0; }
+  .titulo-header h5 {
+    color: rgba(255, 255, 255, 0.5); }
+
+.full-screen {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1px;
+  padding-right: 1px; }
+
+/*--------||End-Header||-----------*/
+/* --------||Search-bar||----------*/
+.search {
+  margin: -40px auto 0 auto;
+  padding: 0 20px; }
+  .search .ion-android-search {
+    font-size: 20px;
+    color: white;
+    margin: 0 auto; }
+  .search div .col-xs-12 {
+    padding: 0 20px; }
+
+input.form-control.input-lg {
+  position: absolute;
+  left: 0px;
+  bottom: -80px;
+  border-radius: 0px;
+  height: 80px;
+  /* Input height modification for responsive displays */ }
+  @media screen and (max-width: 500px) {
+    input.form-control.input-lg {
+      bottom: -66px;
+      height: 50px; } }
+
+.btn-group-lg > .btn, .btn-lg {
+  min-width: 40px;
+  bottom: -80px;
+  height: 80px;
+  right: 0px;
+  position: absolute;
+  padding: 15px;
+  border-radius: 0;
+  /* Button height modification for responsive displays */ }
+  @media screen and (max-width: 500px) {
+    .btn-group-lg > .btn, .btn-lg {
+      bottom: -66px;
+      height: 50px; } }
+
+/* --------||End-Search-bar||----------*/
+/* --------||Four-ft||----------*/
+.four-feat {
+  text-align: center;
+  margin-top: 124px;
+  position: relative;
+  font-family: "Roboto", sans-serif, sans-serif;
+  /*--||Hiding-3-dots-sep-for-sm-displays||--*/ }
+  .four-feat .features::after {
+    background: url("../images/icons/puntitos.png") no-repeat scroll 0 0;
+    content: "";
+    bottom: auto;
+    height: 4px;
+    left: auto;
+    position: absolute;
+    right: -20px;
+    top: 52px;
+    width: 33px; }
+  @media screen and (max-width: 990px) {
+    .four-feat div:last-child::after {
+      width: 0;
+      height: 0; } }
+  @media screen and (max-width: 990px) {
+    .four-feat div:nth-last-child(3n)::after {
+      width: 0;
+      height: 0; } }
+
+/*--||hiding-3-Finish||---*/
+.features h3 {
+  padding: 20px 0 7px 0;
+  font-weight: 500;
+  padding-bottom: 10px; }
+@media screen and (max-width: 770px) {
+  .features h5 {
+    margin-bottom: 8%; } }
+.features div {
+  position: relative;
+  margin: 15px auto; }
+
+/* --------||End-Four-ft||----------*/
+.center-tlt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 35px; }
+
+.center-title {
+  padding: 4% 0 4% 0; }
+  .center-title img {
+    padding: 2% 0; }
+  .center-title h2 {
+    padding: 3% 0 2% 0; }
+
+/* --------||End-Center-TL-||-------*/
+/* --------||Phone-&-Bullets--||-----*/
+.tel-grande {
+  margin: auto;
+  min-width: 200px; }
+
+.six-features-left, .six-features-right {
+  list-style: none; }
+  @media screen and (max-width: 770px) {
+    .six-features-left, .six-features-right {
+      margin: 7% 0; } }
+  .six-features-left li, .six-features-right li {
+    position: relative;
+    padding-top: 0px;
+    padding-right: 60px;
+    margin-top: 47px;
+    width: 100%;
+    text-align: right; }
+    @media screen and (max-width: 770px) {
+      .six-features-left li, .six-features-right li {
+        padding: 0 0 0 60px;
+        text-align: left; } }
+    .six-features-left li h3, .six-features-right li h3 {
+      padding: 15px 0 20px 0;
+      font-weight: 500;
+      display: inline-block; }
+    .six-features-left li h5, .six-features-right li h5 {
+      font-family: "Raleway", sans-serif;
+      color: grey;
+      font-size: 15px;
+      line-height: 150%; }
+    .six-features-left li img, .six-features-right li img {
+      position: absolute;
+      top: 0px;
+      right: 2px; }
+      @media screen and (max-width: 770px) {
+        .six-features-left li img, .six-features-right li img {
+          right: 2px;
+          left: 0px; } }
+
+.six-features-right li {
+  padding-right: 0px;
+  padding-left: 60px;
+  text-align: left; }
+.six-features-right img {
+  right: 0px;
+  left: 2px; }
+
+/* -------||End-Phone-&-Bullets||----------*/
+/* --------||Second center Ttl||-------*/
+.big-img-sep {
+  background: url("../images/pricing-bg.jpg") no-repeat scroll top center;
+  background-size: 100%;
+  margin-top: -50px;
+  text-align: center;
+  z-index: -2; }
+  @media screen and (max-width: 990px) {
+    .big-img-sep {
+      margin-top: 60px;
+      margin-bottom: 60px; } }
+  .big-img-sep div.col-sm-12.full-screen {
+    margin-top: 0;
+    padding-top: 0; }
+  .big-img-sep img {
+    padding: 5% 0 0 0; }
+  .big-img-sep h2 {
+    padding: 2% 0 2% 0; }
+  .big-img-sep h5 {
+    padding-bottom: 15%; }
+
+/* --------||Second center-Ttl--End-||-------*/
+/* --------||Floating Panels||-------*/
+/*Se expande la columna para que quede el panel
+completando toda la pantalla en version mobile xs */
+@media screen and (max-width: 487px) {
+  .col-xs-6.col-md-3.full-panel {
+    width: 94%;
+    float: none;
+    margin: 0 auto; } }
+
+/*-------layout contanier----------*/
+.panels-cont {
+  width: 90%;
+  margin: -150px auto;
+  overflow: auto;
+  /*--------||Floatin Pannels||---------*/ }
+  @media screen and (max-width: 990px) {
+    .panels-cont {
+      margin: -20px auto; } }
+  .panels-cont .floating-panel {
+    margin: 86px auto;
+    text-align: center;
+    position: relative;
+    background: white;
+    padding: 45px 10px 50px 10px;
+    /* sombra */
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+    /* Center Align for cols of the last 2 tables*/
+    /*-------|| Responsive Mobile ----------*/
+    /*-------|| End Responsive Mobile ----------*/ }
+    .panels-cont .floating-panel table.right-td {
+      text-align: left; }
+    .panels-cont .floating-panel .right tr:nth-last-child(n+1) {
+      text-align: center; }
+    @media screen and (max-width: 990px) {
+      .panels-cont .floating-panel {
+        margin: 19px auto;
+        padding: 80px auto; } }
+    @media screen and (max-width: 770px) {
+      .panels-cont .floating-panel {
+        margin: 30px auto; } }
+    .panels-cont .floating-panel h3 {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 10px; }
+      @media screen and (max-width: 990px) {
+        .panels-cont .floating-panel h3 {
+          padding-top: 25px; } }
+    .panels-cont .floating-panel h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+    .panels-cont .floating-panel h6 {
+      padding-bottom: 15%; }
+    .panels-cont .floating-panel button {
+      background: #00ADF1;
+      width: 80%;
+      margin: 15px auto; }
+    .panels-cont .floating-panel span.centavos {
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute; }
+    .panels-cont .floating-panel table {
+      width: 70%;
+      margin: 15px auto;
+      text-align: left; }
+      .panels-cont .floating-panel table td {
+        padding: 8px 0 8px 0; }
+
+/* --------||Floating Panels End||-------*/
+/* --------||Pre Footer||-------*/
+.title-pre-footer {
+  background: #142e3f;
+  padding: 60px 0;
+  margin-top: 12%;
+  width: 100%; }
+  .title-pre-footer h2 {
+    color: white; }
+    .title-pre-footer h2 span {
+      color: #029bd8; }
+
+/* --------||End Pre Footer||-------*/
+footer {
+  background: #091722;
+  padding: 25px 0; }
+  footer h5 {
+    color: white;
+    display: inline-block;
+    padding-top: 12px; }
+
+/* responsive mobile xs */
+.footer-tlt-mob {
+  float: left; }
+  @media screen and (max-width: 700px) {
+    .footer-tlt-mob {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin: 20px auto 15px auto; } }
+
+.footer-nav {
+  /* End Responsiv mobile xs --*/ }
+  .footer-nav ul {
+    margin-top: 7px;
+    float: right;
+    min-width: 200px; }
+    @media screen and (max-width: 700px) {
+      .footer-nav ul {
+        width: 100%;
+        float: none;
+        text-align: center; } }
+  .footer-nav li {
+    display: inline-block;
+    padding-left: 20px; }
+    .footer-nav li a {
+      text-decoration: none; }
+      .footer-nav li a:hover {
+        color: white; }
+
+/*# sourceMappingURL=estilo.css.map */
